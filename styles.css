@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #22d3ee;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+}

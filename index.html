@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranjal Patil | Portfolio</title>
+    <meta name="description" content="Portfolio of Pranjal Patil, an aspiring software engineer exploring DSA, databases, Google Cloud and full stack development." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purpledark: "#12081F",
+              purplemid: "#1C1030",
+              purplecard: "#2A1A45",
+              butter: "#F4E7B0",
+              cyan: "#22d3ee",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-purpledark text-white">
+    <header class="sticky top-0 z-50 bg-purpledark/90 backdrop-blur border-b border-purplecard">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#hero" class="text-2xl font-bold text-butter">Pranjal</a>
+
+        <ul class="hidden md:flex gap-6 text-sm md:text-base items-center">
+          <li><a href="#hero" class="nav-link hover:text-cyan">Home</a></li>
+          <li><a href="#about" class="nav-link hover:text-cyan">About</a></li>
+          <li><a href="#projects" class="nav-link hover:text-cyan">Projects</a></li>
+          <li><a href="#contact" class="nav-link hover:text-cyan">Contact</a></li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          class="md:hidden border border-cyan text-cyan px-3 py-2 rounded-xl"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+      </nav>
+
+      <ul id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 bg-purpledark">
+        <li><a href="#hero" class="block py-2 hover:text-cyan">Home</a></li>
+        <li><a href="#about" class="block py-2 hover:text-cyan">About</a></li>
+        <li><a href="#projects" class="block py-2 hover:text-cyan">Projects</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-cyan">Contact</a></li>
+      </ul>
+    </header>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center py-16">
+        <div>
+          <p class="text-cyan mb-3 tracking-wide">Aspiring Software Engineer</p>
+
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Hi, I'm <span class="text-butter">Pranjal Patil</span>
+          </h1>
+
+          <p class="text-slate-300 text-lg mb-8">
+            When life gives you lemonade, make lemons. Life will be like "whaaat".
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="bg-cyan text-black px-6 py-3 rounded-xl font-semibold hover:bg-butter transition">
+              View Projects
+            </a>
+            <a href="#contact" class="border border-butter text-butter px-6 py-3 rounded-xl hover:bg-butter hover:text-purpledark transition">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="assets/profile.svg"
+            alt="Pranjal Patil"
+            class="w-72 h-72 object-cover rounded-full border-4 border-cyan shadow-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-purplemid">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-cyan text-center">About Me</h2>
+
+        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto text-center mb-12">
+          I'm currently exploring many fields, trying to find my interest. Some of those include DSA, database management, Google Cloud, full stack, and more. Here's to 3 more years of college-level learning and then a lifetime of growth.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-purplecard border border-purplecard rounded-2xl p-6">
+            <h3 class="text-butter text-xl font-semibold mb-4">Skills</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">Java</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">C</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">MySQL</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">Google Cloud</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">HTML</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">CSS</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">JavaScript</span>
+              <span class="px-4 py-2 rounded-full bg-purpledark border border-cyan/40 text-cyan text-sm">DSA</span>
+            </div>
+          </div>
+
+          <div class="bg-purplecard border border-purplecard rounded-2xl p-6">
+            <h3 class="text-butter text-xl font-semibold mb-4">Clubs</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li>Member of ACM-W</li>
+              <li>Member of Mozilla Campus Club</li>
+              <li>Member of TEDx Club</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-14 text-cyan">Projects</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-purplecard border border-purplemid rounded-2xl overflow-hidden flex flex-col transition hover:-translate-y-2 hover:border-cyan hover:shadow-lg hover:shadow-cyan/20">
+            <img src="assets/project-1.svg" alt="Vendor Vantage" class="w-full h-52 object-cover" />
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-2xl font-semibold mb-3 text-butter">Vendor Vantage</h3>
+              <p class="text-slate-400 mb-4">A DSA-based platform that bridges street food vendors, who cannot afford a permanent stall and keep changing locations, with nearby customers. It helps vendors maintain a loyal customer base.</p>
+              <p class="text-sm text-cyan mb-4">Java · HTML · CSS · JavaScript</p>
+              <a href="https://github.com/PranjalR-Patil/Vendor-Vantage" target="_blank" rel="noopener noreferrer" class="mt-auto self-start inline-block bg-cyan text-black px-4 py-2 rounded-xl font-semibold hover:bg-butter transition">View on GitHub</a>
+            </div>
+          </article>
+          <article class="bg-purplecard border border-purplemid rounded-2xl overflow-hidden flex flex-col transition hover:-translate-y-2 hover:border-cyan hover:shadow-lg hover:shadow-cyan/20">
+            <img src="assets/project-2.svg" alt="Aqua Intel AI" class="w-full h-52 object-cover" />
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-2xl font-semibold mb-3 text-butter">Aqua Intel AI</h3>
+              <p class="text-slate-400 mb-4">An AI-based rainwater harvesting management system that gives smart recommendations and rainfall predictions using the Gemini API and a weather API.</p>
+              <p class="text-sm text-cyan mb-4">Gemini API · Weather API · AI</p>
+              <!-- TODO: replace with your repo link and swap this span for the <a> button used in Vendor Vantage -->
+              <span class="mt-auto self-start inline-block border border-butter/40 text-butter/60 px-4 py-2 rounded-xl font-semibold cursor-not-allowed">Repo coming soon</span>
+            </div>
+          </article>
+          <article class="bg-purplecard border border-purplemid rounded-2xl overflow-hidden flex flex-col transition hover:-translate-y-2 hover:border-cyan hover:shadow-lg hover:shadow-cyan/20">
+            <img src="assets/project-3.svg" alt="Crime Investigation System" class="w-full h-52 object-cover" />
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-2xl font-semibold mb-3 text-butter">Crime Investigation System</h3>
+              <p class="text-slate-400 mb-4">A Java console app that puts you inside a crime scene. Interact with witnesses, make decisions and solve the case, built with core OOP concepts.</p>
+              <p class="text-sm text-cyan mb-4">Java · OOP · Console app</p>
+              <!-- TODO: replace with your repo link and swap this span for the <a> button used in Vendor Vantage -->
+              <span class="mt-auto self-start inline-block border border-butter/40 text-butter/60 px-4 py-2 rounded-xl font-semibold cursor-not-allowed">Repo coming soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-purplemid">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-cyan">Contact Me</h2>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
+          <a
+            href="mailto:pranjalpatil757@gmail.com"
+            class="bg-cyan text-black px-6 py-3 rounded-xl font-semibold hover:bg-butter transition"
+          >
+            Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pranjal-patil-694430397/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-butter text-butter px-6 py-3 rounded-xl font-semibold hover:bg-butter hover:text-purpledark transition"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/PranjalR-Patil"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-cyan text-cyan px-6 py-3 rounded-xl font-semibold hover:bg-cyan hover:text-black transition"
+          >
+            GitHub
+          </a>
+        </div>
+
+        <form id="contact-form" class="space-y-6" action="mailto:pranjalpatil757@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 rounded-xl bg-purplecard" />
+          <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-xl bg-purplecard" />
+          <textarea name="message" rows="5" placeholder="Message" required class="w-full px-4 py-3 rounded-xl bg-purplecard"></textarea>
+
+          <button type="submit" class="bg-butter text-purpledark px-6 py-3 rounded-xl font-semibold hover:bg-cyan transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="border-t border-purplecard py-8 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-slate-400 text-sm">© 2026 Pranjal Patil</p>
+        <div class="flex gap-3">
+          <a
+            href="mailto:pranjalpatil757@gmail.com"
+            class="border border-cyan text-cyan px-4 py-2 rounded-xl text-sm hover:bg-cyan hover:text-black transition"
+          >
+            Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pranjal-patil-694430397/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-butter text-butter px-4 py-2 rounded-xl text-sm hover:bg-butter hover:text-purpledark transition"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/PranjalR-Patil"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-cyan text-cyan px-4 py-2 rounded-xl text-sm hover:bg-cyan hover:text-black transition"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuBtn.setAttribute("aria-expanded", String(!isOpen));
+        menuBtn.textContent = isOpen ? "Menu" : "Close";
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuBtn.textContent = "Menu";
+        });
+      });
+    </script>
+  </body>
+</html>
